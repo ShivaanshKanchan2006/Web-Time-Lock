@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Web Time Lock",
+    "version": "1.0",
+    "description": "Tracks website usage and blocks them after a time limit.",
+    "permissions": [
+        "tabs",
+        "storage",
+        "alarms"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

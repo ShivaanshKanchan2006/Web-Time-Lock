@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Time Lock Settings </title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class = "header-row">
+            <h3> Web Time Lock </h3>
+            <button id = "theme-toggle" title = "Toggle Dark Mode"> 🌙 </button>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="domain" placeholder="e.g. xyz.com">
+            <input type="number" id="limit" placeholder="Limit in minutes" min="1">
+            <button id="add"> Add Website </button>
+        </div>
+
+        <h4> Tracked Sites </h4>
+        <table id="site-table">
+            <thead>
+                <tr>
+                    <th>Website</th>
+                    <th>Time (Min)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="list">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
